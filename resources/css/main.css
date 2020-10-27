@@ -1,0 +1,9 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.hello{
+    @apply py-1 mx-1 not-sr-only;
+}
