@@ -5,14 +5,16 @@
         </p>
         @csrf
 
-        <label for="title">Title</label><input class="border-2 focus:outline-none py-2 px-3 mb-2 mt-1" type="text" name="title" id="title">
+        <label for="title">Title</label><input class="border-2 focus:outline-none py-2 px-3 mb-2 mt-1" type="text"
+            name="title" id="title">
         @error('title')
         <p class="text-sm text-red-600 mb-3">{{ $message }}</p>
         @enderror
         <label for="description">Description</label>
-        <textarea class="border-2 focus:outline-none py-2 px-3 mb-2 mt-1"  name="description" id="description"></textarea>
+        <textarea class="border-2 focus:outline-none py-2 px-3 mb-2 mt-1" name="description"
+            id="description"></textarea>
         @error('description')
-        <p class="text-sm text-red-600 mb-3">{{ $message }}</p>
+        <p class="text-sm text-red-700 mb-3">{{ $message }}</p>
         @enderror
         <label for="content">Content</label>
         <textarea class="border-2 focus:outline-none py-2 px-3 mb-2 mt-1" name="content" id="content"></textarea>
@@ -31,8 +33,10 @@
         </select>
 
         <div class="mt-3 flex justify-between">
-            <button type="submit" class="py-1 px-6 border border-green-600 hover:shadow hover:border-green-700 rounded-sm">Create</button>
-            <a class="py-1 px-6 border border-red-500 hover:shadow hover:border-red-600 rounded-sm" href="{{ route('home') }}">Cancel</a>
+            <button type="submit"
+                class="py-1 px-6 border border-green-600 hover:shadow hover:border-green-700 rounded-sm">Create</button>
+            <a class="py-1 px-6 border border-red-500 hover:shadow hover:border-red-600 rounded-sm"
+                href="{{ route('home') }}">Cancel</a>
         </div>
     </form>
 </x-master>
